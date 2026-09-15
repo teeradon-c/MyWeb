@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบสอบถาม</title>
+  <!-- Bootstrap5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: "Tahoma", "Segoe UI", sans-serif;
+    }
+    .form-wrapper {
+      max-width: 700px;
+      margin: 40px auto;
+    }
+    .card-header h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #212529;
+    }
+    footer {
+      text-align: center;
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin: 20px 0 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <div class="card shadow-sm">
+
+      <div class="card-header bg-primary text-white">
+        <h1 class="class-survey-title">แบบสอบเกมที่ผู้คนสนใจ</h1>
+      </div>
+
+      <div class="card-body">
+        <form class="class-survey-form" action="confirmed.html" method="post">
+
+          <h3 class="section-title class-personal-info">นักศึกษา กรอกข้อมูลส่วนตัว</h3>
+
+          <div class="mb-3">
+            <label for="username" class="form-label">ชื่อนักศึกษา:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">หลักสูตร:</label>
+            <input type="text" class="form-control" id="password" name="password" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="yearold" class="form-label">ปีที่เข้าเรียน:</label>
+            <input type="text" class="form-control" id="yearold" name="yearold" required>
+          </div>
+
+          <hr>
+
+          <h3 class="section-title class-checkbox-section">อุปกรณ์ที่ใช้ในการเล่นเกม (เลือกได้หลายอย่าง)</h3>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="media1" value="Notebook" id="media1">
+            <label class="form-check-label" for="media1">Notebook</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="media2" value="IPAD" id="media2">
+            <label class="form-check-label" for="media2">IPAD</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="media3" value="Computer" id="media3">
+            <label class="form-check-label" for="media3">Personel Computer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="media4" value="Phone" id="media4">
+            <label class="form-check-label" for="media4">Mobile Phone</label>
+          </div>
+
+          <hr>
+
+          <h3 class="section-title class-radio-section">แนวเกมที่ชอบ</h3>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fav_language" value="HTML" id="html">
+            <label class="form-check-label" for="html">FPS</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fav_language" value="CSS" id="css">
+            <label class="form-check-label" for="css">Open World</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fav_language" value="JavaScript" id="javascript">
+            <label class="form-check-label" for="javascript">Moba</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fav_language" value="Python" id="Python">
+            <label class="form-check-label" for="Python">Turn Base</label>
+          </div>
+
+          <hr>
+
+          <h3 class="section-title class-select-section">ค่ายเกมที่ชอบ</h3>
+
+          <div class="mb-3">
+            <label for="browsers" class="form-label">กรุณาคลิกเพื่อเลือก เพียงอย่างเดียว:</label>
+            <select class="form-select" name="browsers" id="browsers">
+              <option value="Edge">Riot</option>
+              <option value="Firefox">epic game</option>
+              <option value="Chrome">valve</option>
+              <option value="Opera">blizzard game</option>
+              <option value="Safari">garena</option>
+            </select>
+          </div>
+
+          <div class="mt-4 d-flex gap-2">
+            <input type="submit" class="btn btn-primary" value="ส่งคำตอบ">
+            <input type="reset" class="btn btn-outline-secondary" value="กรอกใหม่">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <footer class="class-footer">
+      &copy; 2568 สงวนลิขสิทธิ์โดย นายธีรดนย์ ไชยโกฎ | รหัสนักศึกษา: 232-9
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางเรียน วิศวกรรมคอมพิวเตอร์ 1/2568</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #2c3e50, #4a6572);
+            padding: 15px 20px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            text-shadow: 2px 2px 5px red;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dcdde1;
+            padding: 8px 4px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 13px;
+            word-wrap: break-word;
+        }
+
+        th {
+            background-color: #485460;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 13px;
+            height: 45px;
+        }
+
+        th.day-col {
+            width: 90px;
+            background-color: #3d3d3d;
+        }
+
+        td.day-cell {
+            background-color: #808e9b;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        td.empty-cell {
+            background-color: #f8f9fa;
+        }
+
+        .course-card b {
+            font-size: 15px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .course-card {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #1e272e;
+            padding: 8px 4px;
+            border-radius: 4px;
+        }
+
+        .subject-1 {
+            background: linear-gradient(135deg, #c7d2fe, #e0e7ff);
+            border: 1px solid #a5b4fc;
+        }
+
+        .subject-2 {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border: 1px solid #fcd34d;
+        }
+
+        .subject-3 {
+            background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+            border: 1px solid #86efac;
+        }
+
+        .subject-4 {
+            background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+            border: 1px solid #f9a8d4;
+        }
+
+        .subject-5 {
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+            border: 1px solid #7dd3fc;
+        }
+
+        .subject-6 {
+            background: linear-gradient(135deg, #ffedd5, #fed7aa);
+            border: 1px solid #fdba74;
+        }
+
+        .subject-7 {
+            background: linear-gradient(135deg, #ccfbf1, #99f6e4);
+            border: 1px solid #5eead4;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #e1b12c;
+            text-align: left;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+
+        footer a {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #d63031;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ตารางเรียน วิศวกรรมคอมพิวเตอร์ 1/2568</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="day-col">Day/Time</th>
+                    <th>8:00-9:00</th>
+                    <th>9:00-10:00</th>
+                    <th>10:00-11:00</th>
+                    <th>11:00-12:00</th>
+                    <th>12:00-13:00</th>
+                    <th>13:00-14:00</th>
+                    <th>14:00-15:00</th>
+                    <th>15:00-16:00</th>
+                    <th>16:00-17:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-cell">จันทร์</td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                </tr>
+                <tr>
+                    <td class="day-cell">อังคาร</td>
+                    <td colspan="4" class="course-card subject-1">
+                        <b>EN2041101-65</b>
+                        (3) 2,<br>
+                        ห้อง (พน.) 1957ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                    <td class="empty-cell"></td>
+                    <td colspan="3" class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                </tr>
+                <tr>
+                    <td class="day-cell">พุธ</td>
+                    <td colspan="2" class="course-card subject-2">
+                        <b>GE2500101-64</b>
+                        (1) 23,<br>
+                        ห้อง (พน.) โรงยิม ชั้น 3 อาคารกิจกรรมฯ<br>
+                        อาคาร 15
+                    </td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td colspan="3" class="course-card subject-3">
+                        <b>ST2051107-65</b>
+                        (3) 2,<br>
+                        ห้อง (พน.) 1962ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                    <td class="course-card subject-4">
+                        <b>HR-</b>
+                        (0) 310,<br>
+                        ห้อง (พน.) 1954ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                </tr>
+                <tr>
+                    <td class="day-cell">พฤหัสบดี</td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td class="empty-cell"></td>
+                    <td colspan="3" class="course-card subject-5">
+                        <b>EN2044101-65</b>
+                        (1) 2,<br>
+                        ห้อง (พน.) 1964ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                    <td class="empty-cell"></td>
+                </tr>
+                <tr>
+                    <td class="day-cell">ศุกร์</td>
+                    <td class="empty-cell"></td>
+                    <td colspan="3" class="course-card subject-6">
+                        <b>GE2300110-64</b>
+                        (3) 2,<br>
+                        ห้อง (พน.) 1961 ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                    <td class="empty-cell"></td>
+                    <td colspan="3" class="course-card subject-7">
+                        <b>EN2041102-65</b>
+                        (3) 2,<br>
+                        ห้อง (พน.) 1958ห้องเรียน<br>
+                        อาคาร 15
+                    </td>
+                    <td class="empty-cell"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            ©สงวนลิขสิทธิ์ โดย 056950405232-9 นายธีรดนย์ ไชยโกฎ สาขา<a href="https://www.facebook.com/cpermutp" target="_blank">วิศวกรรมคอมพิวเตอร์</a> มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร ปี พ.ศ. 2569
+        </footer>
+
+    </div>
+
+</body>
+</html>
